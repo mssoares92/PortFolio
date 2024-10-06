@@ -1,0 +1,12 @@
+#sobre{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+img{
+    width: 40%;
+    border-radius: 25%;
+}
