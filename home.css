@@ -1,0 +1,24 @@
+.typewriter {
+    border-right: 2px solid black; /* Cursor */
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Esconde o texto que não é visível */
+    display: inline-block; /* Para que funcione bem com o cursor */
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+
+    display: flex; /* Usando flexbox */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            height: 100vh; /* Ocupa toda a altura da tela */
+            width: 100%; /* Ocupa toda a largura da tela */
+}
+
+.blink {
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}

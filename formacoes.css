@@ -1,0 +1,21 @@
+#formacoes{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20 px;
+}
+
+#formacoes h2{
+
+    padding:20px;
+	text-align:center;
+	font-size: 4rem;
+}
+
+#cards_formacoes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
