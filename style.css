@@ -353,7 +353,12 @@ body {
 	text-align:center;
 	font-size: 4rem;
 }
+.titulo_sobre{
+    font-style: oblique;
+    font-weight: 5rem;
+}
 .myP {
+    
 	text-align: justify;
 	padding-left:15%;
 	padding-right:15%;
