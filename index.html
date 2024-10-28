@@ -16,12 +16,13 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="#inicio">Mssoares</a>
+                <a href="#inicio"></a>
             </div>    
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
                     <li><a href="#sobre_mim">Sobre mim</a></li>
                     <li><a href="#formacoes">Cursos/Formações</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contatos">Contato</a></li>
                 </ul>
@@ -35,7 +36,7 @@
     </nav>
 
     <!-- SECTION HOME  -->
-    <section class="home" id="inicio">
+    <section  id="inicio" class="home">
      
     <div class="typewriter" id="typewriter">
         
@@ -43,7 +44,7 @@
     </section>
 
     <!-- SECTION SOBRE MIM -->
-    <section id="sobre_mim">
+    <section id="sobre_mim" class="about_me">
         <div style="height: auto">
             <!-- just to make scrolling effect possible -->
                 <h2 class="myH2">Sobre Mim</h2>
@@ -76,49 +77,75 @@
     </section>
 
     <!-- SECTION FORMAÇÕES -->
-    <section id="formacoes">
-   <h2>Cursos e Formações</h2>
+      <section id="formacoes" class="">
+          <h2>Cursos e Formações</h2>
 
-   <section id="cards_formacoes">
-    <div class="card" style="width: 25rem;">
-        <img src="images/fadegrs.png" class="card-img-top" alt="logofaders" style="width: auto; height: auto;">
-        <div class="card-body">
-          <h4 class="card-title">Analise e Desenvolvimento de Sistemas </h4>
-          <p class="card-text">Grdução na area de desenvolcimento e analise de sistemas</p>
-          <a href="#" class="btn btn-primary">Certificado</a>
+        <section id="cards_formacoes">
+          <div class="card" style="width: 25rem;">
+              <img src="images/fadegrs.png" class="card-img-top" alt="logofaders" style="width: auto; height: auto;">
+              <div class="card-body">
+                <h4 class="card-title">Analise e Desenvolvimento de Sistemas </h4>
+                <p class="card-text">Grdução na area de desenvolcimento e analise de sistemas</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certificadoModal" 
+                data-certificado="link_do_certificado_1" 
+                data-imagem="url_da_imagem_do_certificado_1">Certificado</button>
+              </div>
+          </div>
+            
+            </div>
+          </div>
         
+            <div class="card" style="width: 25rem;">
+                <img src="images/qi.jpg" class="card-img-top" alt="logoQI" style="width: auto; height: auto;">
+                <div class="card-body">
+                  <h4 class="card-title">Técnico em Informática</h4>
+                  <p class="card-text" style= "padding-bottom: 10px;">Curso técnico em informatica, aprendendo um pouco de cada area</p>
+                  <a href="#" class="btn btn-primary" >Certificado</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 25rem;">
+                <img src="images/cursoemvideo.png" class="card-img-top" alt="logoCursoEmVideo" style="width: auto; height: 138px;">
+                <div class="card-body">
+                  <h4 class="card-title">Curso MySQL</h4>
+                  <p class="card-text">Curso técnico em informatica, aprendendo um pouco de cada area</p>
+                  <a href="#" class="btn btn-primary">Certificado</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 25rem;">
+                <img src="images/cursoemvideo.png" class="card-img-top" alt="logoCursoEmVideo" style="width: auto; height: 138px;">
+                <div class="card-body">
+                  <h4 class="card-title">JS</h4>
+                  <p class="card-text">Curso técnico em informatica, aprendendo um pouco de cada area</p>
+                  <a href="#" class="btn btn-primary">Certificado</a>
+                </div>
+              </div>
+      </section>
+
+      <div class="modal fade" id="certificadoModal" tabindex="-1" aria-labelledby="certificadoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="certificadoModalLabel">Certificado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Você pode acessar seu certificado através do seguinte link:</p>
+                    <a href="#" id="certificadoLink" target="_blank">Link do Certificado</a>
+                    <br><br>
+                    <img id="certificadoImage" src="#" alt="Certificado" class="img-fluid" />
+                </div>
+            </div>
         </div>
-      </div>
-     
-        <div class="card" style="width: 25rem;">
-            <img src="images/qi.jpg" class="card-img-top" alt="logoQI" style="width: auto; height: auto;">
-            <div class="card-body">
-              <h4 class="card-title">Técnico em Informática</h4>
-              <p class="card-text" style= "padding-bottom: 10px;">Curso técnico em informatica, aprendendo um pouco de cada area</p>
-              <a href="#" class="btn btn-primary" >Certificado</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 25rem;">
-            <img src="images/cursoemvideo.png" class="card-img-top" alt="logoCursoEmVideo" style="width: auto; height: 138px;">
-            <div class="card-body">
-              <h4 class="card-title">Curso MySQL</h4>
-              <p class="card-text">Curso técnico em informatica, aprendendo um pouco de cada area</p>
-              <a href="#" class="btn btn-primary">Certificado</a>
-            </div>
-          </div>
-
-          <div class="card" style="width: 25rem;">
-            <img src="images/cursoemvideo.png" class="card-img-top" alt="logoCursoEmVideo" style="width: auto; height: 138px;">
-            <div class="card-body">
-              <h4 class="card-title">JS</h4>
-              <p class="card-text">Curso técnico em informatica, aprendendo um pouco de cada area</p>
-              <a href="#" class="btn btn-primary">Certificado</a>
-            </div>
-          </div>
-   </section>
-       
+    </div>
     </section>
+
+    <!-- SECTION SKILLS -->
+     <section id="habilidade" class="skills">
+
+     </section>
+
     
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
