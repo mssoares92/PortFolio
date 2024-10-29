@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(29, 29, 100); */
+    background-image: linear-gradient(to right, rgb(21, 21, 185) ,rgb(20, 20, 80));
+    height: 5rem;
+    color: white;
+    font-size: 2rem;
+
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}

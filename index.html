@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="formacoes.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="rodape.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
     <title>Matheus Soares</title>
 </head>
 <body>
@@ -36,12 +40,11 @@
     </nav>
 
     <!-- SECTION HOME  -->
-    <section  id="inicio" class="home">
-     
-    <div class="typewriter" id="typewriter">
-        
-    </div>
-    </section>
+    <section id="inicio" class="home">
+      <div class="typewriter" id="typewriter">
+         Você está no portfólio de Matheus Soares conheça mais sobre ele abaixo...
+      </div>
+  </section>
 
     <!-- SECTION SOBRE MIM -->
     <section id="sobre_mim" class="about_me">
@@ -100,7 +103,9 @@
                 <div class="card-body">
                   <h4 class="card-title">Técnico em Informática</h4>
                   <p class="card-text" style= "padding-bottom: 10px;">Curso técnico em informatica, aprendendo um pouco de cada area</p>
-                  <a href="#" class="btn btn-primary" >Certificado</a>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certificadoModal" 
+                  data-certificado="link_do_certificado_1" 
+                  data-imagem="url_da_imagem_do_certificado_1">Certificado</button>
                 </div>
               </div>
 
@@ -109,7 +114,9 @@
                 <div class="card-body">
                   <h4 class="card-title">Curso MySQL</h4>
                   <p class="card-text">Curso técnico em informatica, aprendendo um pouco de cada area</p>
-                  <a href="#" class="btn btn-primary">Certificado</a>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certificadoModal" 
+                  data-certificado="link_do_certificado_1" 
+                  data-imagem="url_da_imagem_do_certificado_1">Certificado</button>
                 </div>
               </div>
 
@@ -118,7 +125,9 @@
                 <div class="card-body">
                   <h4 class="card-title">JS</h4>
                   <p class="card-text">Curso técnico em informatica, aprendendo um pouco de cada area</p>
-                  <a href="#" class="btn btn-primary">Certificado</a>
+                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#certificadoModal" 
+                  data-certificado="link_do_certificado_1" 
+                  data-imagem="url_da_imagem_do_certificado_1">Certificado</button>
                 </div>
               </div>
       </section>
@@ -146,6 +155,7 @@
 
      </section>
 
+      <footer class="rodape">Matheus</footer>
     
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

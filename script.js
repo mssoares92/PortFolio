@@ -17,21 +17,25 @@ $(window).scroll(function() {
 
 
 
-const text = `Você está no portfólio de Matheus Soares conheça mais sobre ele abaixo...`;
 const typewriterElement = document.getElementById("typewriter");
+const text = typewriterElement.innerHTML; // Pega o texto com formatação HTML
 let index = 0;
+typewriterElement.innerHTML = ""; // Limpa o texto da div para começar a digitação
 
 function type() {
+    // Adiciona o próximo caractere ao texto
     if (index < text.length) {
-        typewriterElement.textContent += text[index++];
-        setTimeout(type, 100);
+        typewriterElement.innerHTML += text[index++];
+        setTimeout(type, 100); // Ajuste a velocidade de digitação aqui
     } else {
+        // Reinicia a digitação após uma pausa
         setTimeout(() => {
-            typewriterElement.textContent = ""; // Limpa o texto
+            typewriterElement.innerHTML = ""; // Limpa o texto
             index = 0; // Reinicia o índice
             type(); // Inicia a digitação novamente
         }, 1000); // Pausa antes de reiniciar
     }
 }
 
+// Inicia a função de digitação
 type();
