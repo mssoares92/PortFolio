@@ -26,14 +26,14 @@ function type() {
     // Adiciona o próximo caractere ao texto
     if (index < text.length) {
         typewriterElement.innerHTML += text[index++];
-        setTimeout(type, 100); // Ajuste a velocidade de digitação aqui
+        setTimeout(type, 80); // Ajuste a velocidade de digitação aqui
     } else {
         // Reinicia a digitação após uma pausa
         setTimeout(() => {
             typewriterElement.innerHTML = ""; // Limpa o texto
             index = 0; // Reinicia o índice
             type(); // Inicia a digitação novamente
-        }, 1000); // Pausa antes de reiniciar
+        }, 900); // Pausa antes de reiniciar
     }
 }
 
