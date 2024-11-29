@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="formacoes.css">
     <link rel="stylesheet" href="rodape.css">
+    <link rel="stylesheet" href="projetos.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
     <title>Matheus Soares</title>
+    
 </head>
 
 <body>
-
-
 
 
     <!-- MENU DE OPÇÕES NAVBAR -->
@@ -187,20 +187,36 @@
       </div>
      </section>
 
+     <section id="projetos" class="projects">
+      
+      <section class="slider">
+        <div class="slider-container">
+            <div class="slide">Conteúdo 1</div>
+            <div class="slide">Conteúdo 2</div>
+            <div class="slide">Conteúdo 3</div>
+            <div class="slide">Conteúdo 4</div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>
+
+     </section>
+
       <footer class="rodape">
         <p class="mx-auto text-center mb-0">&copy; 2024 Desenvolvido por Matheus Soares</p>
+      </footer> 
 
-      </footer>
-    
 <!-- Jquery needed -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="projetos.js"></script>
 
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   
 
-    
 </body>
 </html>
