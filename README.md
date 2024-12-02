@@ -23,5 +23,4 @@
     git  clone  https://github.com/mssoares92/PortFolio.git
 
 ## 🛠️ Abrir e rodar
-
-https://portfolio-inky-xi-85.vercel.app/
+https://mssoares92.github.io/PortFolio/
